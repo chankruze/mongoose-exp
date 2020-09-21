@@ -10,8 +10,8 @@ const express = require('express'),
     os = require('os'),
     path = require('path'),
     config = require('config'),
-    connectMongoDB = require('./config/db')
-const initSocketIO = require('./socketHandler')
+    connectMongoDB = require('./config/db'),
+    initSocketIO = require('./socketHandler')
 
 // init express app 
 const app = express()

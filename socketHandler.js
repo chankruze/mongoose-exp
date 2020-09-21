@@ -29,9 +29,14 @@ const initSocketIO = (server) => {
 
             // update MongoDB
             Match.findOne({ tourneyId: constants.TOURNEY_ID }, (err, res) => {
-                res.matchTitle = args.title
-                res.matchUrl = args.url
-                res.save()
+                if (err) {
+                    console.log(`[ERROR]`)
+                    console.log(err)
+                } else {
+                    res.matchTitle = args.title
+                    res.matchUrl = args.url
+                    res.save()
+                }
             })
         })
 
