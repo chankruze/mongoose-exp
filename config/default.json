@@ -1,0 +1,4 @@
+{
+    "MONGO_ATLAS_URI" : "mongodb+srv://geekofia_url_shortner:azure2314@cluster0-ohka2.azure.mongodb.net/ipl-2020?retryWrites=true&w=majority",
+    "PORT": 5100
+}
